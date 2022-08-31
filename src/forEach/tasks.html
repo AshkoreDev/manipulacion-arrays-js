@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tareas</title>
+</head>
+<body>
+	
+	<div id="app"></div>
+
+	<script>
+		
+		const tasks = [
+      { title: 'Reunión', date: '10/09/2022', time: '2:00pm', checked: true },
+      { title: 'Cita con el médico', date: '12/09/2022', time: '9:00am', checked: false },
+      { title: 'Cita en el veterinario', date: '15/09/2022', time: '10:00pm', checked: false },
+		];
+
+		const app = document.getElementById('app');
+
+    tasks.forEach(task => {
+
+      const div = document.createElement('div');
+      const checkbox = document.createElement('input');
+      const p = document.createElement('p');
+      
+      checkbox.type = 'checkbox';
+      checkbox.checked = task.checked;
+
+      p.textContent = `Título: ${task.title} -- Fecha: ${task.date} -- Hora: ${task.time}`;
+
+      div.append(checkbox, p);
+      app.appendChild(div);
+    });
+	</script>
+</body>
+</html>
