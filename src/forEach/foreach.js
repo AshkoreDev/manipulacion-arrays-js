@@ -1,5 +1,6 @@
 // ForEach consiste en ejecutar una función callback para cada uno de los elementos a iterar.
 // A diferencia del ciclo For, ForEach permite realizar algoritmos con una menor cantidad de líneas obteniendo el mismo resultado.
+// Método 
 
 
 const letters = ['a', 'b', 'c'];
