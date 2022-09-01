@@ -1,5 +1,4 @@
 // Map puede seleccionar los elementos de todo un array de objetos.
-
 const orders = [
   {
     customerName: "Nicolas",
@@ -29,7 +28,7 @@ console.log('Original', orders);
 console.log('Nuevo', res);
 
 
-// Agregar un nuevo atributo a cada uno de los objetos sin modificar el array original.
+// Agregar un nuevo atributo a cada uno de los objetos del array.
 const res2 = orders.map(item => {
 
 	item.tax = item.total * .19;
@@ -39,7 +38,6 @@ const res2 = orders.map(item => {
 
 console.log('Original', orders);
 console.log('Nuevo 2', res2);
-
 // Cuando se copia un objeto que tiene una referencia en memoria, no copia un nuevo elemento sino que copia la referencia en memoria; por lo tanto si se puede modificar el array original.
 
 
